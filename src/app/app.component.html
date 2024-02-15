@@ -1,27 +1,27 @@
 <div class="calc">
     <button class="theme">THEME</button>
     <div class="calc-screen">
-        <p>0</p>
+        <p #calcScreen>{{out}}</p>
     </div>
     <div class="buttons">
-        <div class="btn ac">ac</div>
-        <div class="btn plus-minus">+/-</div>
-        <div class="btn percent">%</div>
-        <div class="btn division">/</div>
-        <div class="btn seven">7</div>
-        <div class="btn eight">8</div>
-        <div class="btn nine">9</div>
-        <div class="btn multiply">X</div>
-        <div class="btn four">4</div>
-        <div class="btn five">5</div>
-        <div class="btn six">6</div>
-        <div class="btn minus">-</div>
-        <div class="btn one">1</div>
-        <div class="btn two">2</div>
-        <div class="btn three">3</div>
-        <div class="btn plus">+</div>
-        <div class="btn zero">0</div>
-        <div class="btn comma">.</div>
-        <div class="btn equal">=</div>
+        <div class="btn ac" (click)="clearAll()" (click)="calculate($event)">{{action[0]}}</div>
+        <div class="btn plus-minus" (click)="calculate($event)">{{action[1]}}</div>
+        <div class="btn percent" (click)="calculate($event)">{{action[2]}}</div>
+        <div class="btn division" (click)="calculate($event)">{{action[3]}}</div>
+        <div class="btn multiply" (click)="calculate($event)">{{action[4]}}</div>
+        <div class="btn minus" (click)="calculate($event)">{{action[5]}}</div>
+        <div class="btn plus" (click)="calculate($event)">{{action[6]}}</div>
+        <div class="btn comma" (click)="calculate($event)">{{action[7]}}</div>
+        <div class="btn equal" (click)="calculate($event)">{{action[8]}}</div>
+        <div class="btn zero" (click)="calculate($event)">{{digits[0]}}</div>
+        <div class="btn one" (click)="calculate($event)">{{digits[1]}}</div>
+        <div class="btn two" (click)="calculate($event)">{{digits[2]}}</div>
+        <div class="btn three" (click)="calculate($event)">{{digits[3]}}</div>
+        <div class="btn four" (click)="calculate($event)">{{digits[4]}}</div>
+        <div class="btn five" (click)="calculate($event)">{{digits[5]}}</div>
+        <div class="btn six" (click)="calculate($event)">{{digits[6]}}</div>
+        <div class="btn seven" (click)="calculate($event)">{{digits[7]}}</div>
+        <div class="btn eight" (click)="calculate($event)">{{digits[8]}}</div>
+        <div class="btn nine" (click)="calculate($event)">{{digits[9]}}</div>
     </div>
 </div>

@@ -27,6 +27,68 @@
   }
 }
 
+.ac {
+  grid-area: ac;
+}
+.plus-minus {
+  grid-area: plus-minus;
+}
+.percent {
+  grid-area: percent;
+}
+.division {
+  grid-area: division;
+}
+
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.multiply {
+  grid-area: multy;
+}
+
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.minus {
+  grid-area: minus;
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.plus {
+  grid-area: plus;
+}
+
+.zero {
+  grid-area: zeros;
+}
+.comma {
+  grid-area: comma;
+}
+.equal {
+  grid-area: equal;
+}
+
 .btn.ac,
 .btn.plus-minus,
 .btn.percent {
@@ -45,16 +107,16 @@
 .buttons {
   display: grid;
   grid-template-areas:
-    "ac pluc-minus percent division"
-    "seven eight nine multiply"
+    "ac plus-minus percent division"
+    "seven eight nine multy"
     "four five six minus"
-    "zero zero comma equal";
+    "one two three plus"
+    "zeros zeros comma equal";
   grid-gap: 7px;
   justify-items: center;
 }
 
 .btn.zero {
-  grid-column: 1 / -3;
   width: 100%;
   border-radius: 100px;
 }
