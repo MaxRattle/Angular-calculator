@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -16,19 +17,14 @@ export class AppComponent {
   result = false;
   out: number | string = 0;
 
-  buttons = {};
   digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
   action = ['ac', '+/-', '%', '/', 'X', '-', '+', '.', '='];
 
-  //clear
-  clearAll() {
-    this.firstNumber = '';
-    this.secondNumber = '';
-    this.sign = '';
-    this.result = false;
-    this.out = 0;
-    console.log('AC worked');
+  // theme
+  isLightTheme: boolean = false;
+  changeTheme() {
+    this.isLightTheme = !this.isLightTheme;
   }
 
   //calculate
@@ -59,6 +55,15 @@ export class AppComponent {
         this.addDigit(buttonText);
       }
     }
+  }
+
+  clearAll() {
+    this.firstNumber = '';
+    this.secondNumber = '';
+    this.sign = '';
+    this.result = false;
+    this.out = 0;
+    console.log('AC worked');
   }
 
   changeSign() {

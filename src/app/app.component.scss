@@ -2,7 +2,7 @@
   margin: 50px auto;
   width: 300px;
   border-radius: 20px;
-  background: #000;
+  background-color: #000;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px 18px 20px 18px;
@@ -12,7 +12,7 @@
 .btn {
   width: 60px;
   height: 60px;
-  background: #333;
+  background-color: #333;
   border-radius: 50%;
   text-align: center;
   line-height: 58px;
@@ -89,19 +89,19 @@
   grid-area: equal;
 }
 
-.btn.ac,
-.btn.plus-minus,
-.btn.percent {
-  background: #a6a6a6;
+.ac,
+.plus-minus,
+.percent {
+  background-color: #a6a6a6;
   color: #000;
 }
 
-.btn.division,
-.btn.multiply,
-.btn.minus,
-.btn.plus,
-.btn.equal {
-  background: #ff9501;
+.division,
+.multiply,
+.minus,
+.plus,
+.equal {
+  background-color: #ff9501;
 }
 
 .buttons {
@@ -116,7 +116,7 @@
   justify-items: center;
 }
 
-.btn.zero {
+.zero {
   width: 100%;
   border-radius: 100px;
 }
@@ -128,6 +128,7 @@
   justify-items: end;
   align-items: end;
   margin-bottom: 25px;
+  overflow: hidden;
   & p {
     text-align: right;
     font-size: 60px;
@@ -146,10 +147,45 @@
   border-radius: 20px;
   width: 100%;
   &:hover {
-    background: #a6a6a6;
+    background-color: #a6a6a6;
     color: #fafafa94;
   }
   &:active {
     filter: brightness(75%);
   }
+}
+
+//theme_light styles
+.ac_ligth,
+.plus-minus_ligth,
+.percent_ligth {
+  background-color: #444242;
+  color: #d1d1d1;
+}
+
+.division_ligth,
+.multiply_ligth,
+.minus_ligth,
+.plus_ligth,
+.equal_ligth {
+  background-color: #000;
+  color: #d1d1d1;
+}
+
+.theme_light {
+  background-color: #000;
+  color: #a6a6a6;
+}
+
+.btn_light {
+  background-color: #b6b6b6;
+}
+
+.calc_light {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.body_ligth {
+  background-color: black;
 }
