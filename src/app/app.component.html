@@ -1,0 +1,27 @@
+<div class="calc" [ngClass]="{ 'calc_light': isLightTheme }">
+    <button class="theme" [ngClass]="{ 'theme_light': isLightTheme }" (click)="changeTheme()">THEME</button>
+    <div class="calc-screen">
+        <p #calcScreen>{{out}}</p>
+    </div>
+    <div class="buttons">
+        <div class="btn ac" [ngClass]="{ 'ac_ligth': isLightTheme }" (click)="calculate($event)">{{action[0]}}</div>
+        <div class="btn plus-minus" [ngClass]="{ 'plus-minus_ligth': isLightTheme }" (click)="calculate($event)">{{action[1]}}</div>
+        <div class="btn percent" [ngClass]="{ 'percent_ligth': isLightTheme }" (click)="calculate($event)">{{action[2]}}</div>
+        <div class="btn division" [ngClass]="{ 'division_ligth': isLightTheme }" (click)="calculate($event)">{{action[3]}}</div>
+        <div class="btn multiply" [ngClass]="{ 'multiply_ligth': isLightTheme }" (click)="calculate($event)">{{action[4]}}</div>
+        <div class="btn minus" [ngClass]="{ 'minus_ligth': isLightTheme }" (click)="calculate($event)">{{action[5]}}</div>
+        <div class="btn plus" [ngClass]="{ 'plus_ligth': isLightTheme }" (click)="calculate($event)">{{action[6]}}</div>
+        <div class="btn comma" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{action[7]}}</div>
+        <div class="btn equal" [ngClass]="{ 'equal_ligth': isLightTheme }" (click)="calculate($event)">{{action[8]}}</div>
+        <div class="btn zero" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[0]}}</div>
+        <div class="btn one" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[1]}}</div>
+        <div class="btn two" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[2]}}</div>
+        <div class="btn three" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[3]}}</div>
+        <div class="btn four" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[4]}}</div>
+        <div class="btn five" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[5]}}</div>
+        <div class="btn six" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[6]}}</div>
+        <div class="btn seven" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[7]}}</div>
+        <div class="btn eight" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[8]}}</div>
+        <div class="btn nine" [ngClass]="{ 'btn_light': isLightTheme }" (click)="calculate($event)">{{digits[9]}}</div>
+    </div>
+</div>

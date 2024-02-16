@@ -1,2 +1,1 @@
-# Angular-calculator
-First try to do app
+[Deploy on Netlify](https://maxrattle-angular-calculator.netlify.app/)
